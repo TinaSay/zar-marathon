@@ -3,7 +3,7 @@ import s from '../index.module.css';
 const layout = (props) => {
 
     return (
-        <section className={s.root} style={{backgroundColor: `${props.colorBg}`}}>
+        <section className={s.root} style={{backgroundImage: `url(${props.urlBg})`}}>
             <div className={s.wrapper}>
                 <article>
                     <div className={s.title}>

@@ -1,8 +1,10 @@
+import s from '../index.module.css';
+
 const header = (props) => {
     return (
-        <header className="root">
-            <div className="forest"></div>
-            <div className="container">
+        <header className={s.root}>
+            <div className={s.forest}></div>
+            <div className={s.container}>
                 <h1>{props.title && props.title}</h1>
                 <p>{props.descr && props.descr}</p>
             </div>
