@@ -1,5 +1,5 @@
-const footer=()=>{
-    return(
+const footer = () => {
+    return (
         <footer>
             <div className="wrapper">
                 <h3>THANKS FOR VISITING</h3>

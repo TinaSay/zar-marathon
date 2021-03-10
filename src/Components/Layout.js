@@ -1,14 +1,16 @@
-const layout=(props)=>{
+import s from '../index.module.css';
 
-    return(
-        <section className="root" style={{ backgroundColor: `${props.colorBg}` }} >
-            <div className="wrapper">
+const layout = (props) => {
+
+    return (
+        <section className={s.root} style={{backgroundColor: `${props.colorBg}`}}>
+            <div className={s.wrapper}>
                 <article>
-                    <div className="title">
+                    <div className={s.title}>
                         <h3>{props.title && props.title}</h3>
                         <span className="separator"></span>
                     </div>
-                    <div className="desc full">
+                    <div className={s.full}>
                         <p>{props.descr && props.descr}</p>
                     </div>
                 </article>
