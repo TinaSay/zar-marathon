@@ -2,15 +2,17 @@ import s from '../index.module.css';
 
 const layout = (props) => {
 
+    const styleBg = props.urlBg ? {backgroundImage: `url(${props.urlBg})`} : {background: props.colorBg};
+
     return (
-        <section className={s.root} style={{backgroundImage: `url(${props.urlBg})`}}>
+        <section className={s.root} style={styleBg}>
             <div className={s.wrapper}>
                 <article>
                     <div className={s.title}>
                         <h3>{props.title && props.title}</h3>
-                        <span className="separator"></span>
+                        <span className={s.separator}></span>
                     </div>
-                    <div className={s.full}>
+                    <div className={s.desc}>
                         <p>{props.descr && props.descr}</p>
                     </div>
                 </article>
