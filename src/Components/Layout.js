@@ -12,7 +12,7 @@ const layout = (props) => {
                         <h3>{props.title && props.title}</h3>
                         <span className={s.separator}></span>
                     </div>
-                    <div className={s.desc}>
+                    <div className={`${s.desc} ${s.full}`}>
                         <p>{props.descr && props.descr}</p>
                     </div>
                 </article>
